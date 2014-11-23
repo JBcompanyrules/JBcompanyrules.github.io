@@ -21,6 +21,7 @@ ul{
 }
 li{
   float: left;
+  display: inline;
 }
 a{
   color: lightgray;
