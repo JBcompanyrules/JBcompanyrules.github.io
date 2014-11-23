@@ -32,6 +32,6 @@ a{
   float: left;
   background-color: black;
   color: white;
-  border-style: solid;
-  font-size: 12px;
+  padding: 5px;
+  font-size: 6px;
 }
