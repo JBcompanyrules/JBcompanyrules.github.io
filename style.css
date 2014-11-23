@@ -18,8 +18,9 @@ ul{
 }
 li{
   display: inline;
-  float: left;
 }
 a{
   color: lightgray;
+  display: block;
+  width: 60px;
 }
