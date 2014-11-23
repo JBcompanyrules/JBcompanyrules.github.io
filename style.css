@@ -28,3 +28,9 @@ a{
   display: block;
   width: 80px;
 }
+.content{
+  float: left;
+  background-color: black;
+  color: white;
+  border-style: solid;
+}
