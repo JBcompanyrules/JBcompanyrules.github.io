@@ -12,6 +12,7 @@ color: gray;
   float: left;
   position: inline;
   background-color: black;
+  list-style-type: none;
 }
 a{
   color: lightgray;
