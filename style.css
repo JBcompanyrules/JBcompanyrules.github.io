@@ -1,3 +1,8 @@
+@font-face{
+  font-family: Mindcraft;
+  src: url(https://dl.dropbox.com/s/2hvsh0hcexm5tao/minecraft_font_by_pwnage_block-d37t6nb.ttf)
+}
+
 body{
   background-color: black;
   color: gray;
@@ -29,6 +34,7 @@ a{
   width: 80px;
 }
 .content{
+  font-family:Mindcraft;
   float: left;
   background-color: black;
   color: white;
