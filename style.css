@@ -23,7 +23,6 @@ padding: 6px;
   opacity: 0.8;
   color: black;
   margin-bottom: 2cm;
-  background-image: url("http://pixelpapercraft.com/files/1335684299762.jpg");
 }
 ul{
   list-style-type: none;
@@ -39,6 +38,7 @@ li{
   opacity: 0.9;
   padding: 2px;
   display: inline;
+  background-image: url("http://pixelpapercraft.com/files/1335684299762.jpg");
 }
 a{
   color: lightgray;
