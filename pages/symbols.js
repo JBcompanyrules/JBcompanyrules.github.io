@@ -17,6 +17,6 @@ function FindP(){
 }
 
 function Show(){
-  var NUM = document.getElementById("Id").value;
-  document.getElementById("Num").innerHTML='#'+NUM;
+  var Num = document.getElementById("Id").value;
+  document.getElementById("Num").innerHTML=Num;
 }
