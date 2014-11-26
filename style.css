@@ -56,7 +56,6 @@ h1,h2,h3,h4,h5,h6,p,b{
 }
 .content{
   font-family:Mindcraft;
-  float: left;
   width: 1200px;
   background-color: gray;
   opacity: 0.7;
