@@ -68,9 +68,13 @@ h1,h2,h3,h4,h5,h6,p,b{
 
 #username, #password{
   background-color: black;
-  color: white;
+  color: lightgray;
   border-style: solid;
   height: 30px;
   width: 400px;
+}
+#button{
+  width: 402px;
+  background-color: gray;
 }
 
