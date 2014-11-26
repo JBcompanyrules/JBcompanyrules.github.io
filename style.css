@@ -19,12 +19,15 @@ color: gray;
 #nav{
   float: left;
   position: inline;
-  background-color: black;
+  opacity: 0.8;
+  background-color: lightgray;
 }
 ul{
   list-style-type: none;
-  margin: 0;
+  margin: 0px 0px 4px 3px;
   padding: 0;
+  border-style: solid;
+  padding: 5px;
   overflow: hidden;
 }
 li{
@@ -43,7 +46,7 @@ h1,h2,h3,h4,h5,h6,p,b{
   font-family:Mindcraft;
   float: left;
   background-color: gray;
-  opacity: 0.4;
+  opacity: 0.7;
   color: white;
   padding: 5px;
   font-size: 9px;
