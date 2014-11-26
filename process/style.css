@@ -7,12 +7,15 @@ opacity: 0.8;
 name{
 color: blue;
 font-size: 20px;
+margin-bottom: 1cm;
 }
 date{
 color: gray;
 font-size: 16px;
+margin-bottom: 2cm;
 }
 postbody{
 color: black
 font-size: 18px
+margin-bottom: 1cm;
 }
