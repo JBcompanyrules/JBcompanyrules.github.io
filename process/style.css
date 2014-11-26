@@ -1,0 +1,18 @@
+post{
+height: 700px;
+width: 1000px;
+background-color: lightgray;
+opacity: 0.8;
+}
+name{
+color: blue;
+font-size: 20px;
+}
+date{
+color: gray;
+font-size: 16px;
+}
+postbody{
+color: black
+font-size: 18px
+}
