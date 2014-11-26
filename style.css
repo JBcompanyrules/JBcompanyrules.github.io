@@ -32,6 +32,8 @@ li{
   float: left;
   border-style: solid;
   margin-right: 4px;
+  color: black;
+  opacity: 0.9;
   padding: 2px;
   display: inline;
 }
