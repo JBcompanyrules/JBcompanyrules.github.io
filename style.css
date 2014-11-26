@@ -67,6 +67,7 @@ h1,h2,h3,h4,h5,h6,p,b{
 }
 
 #username, #password{
+  text-align: left;
   background-color: black;
   color: lightgray;
   border-style: solid;
@@ -74,9 +75,10 @@ h1,h2,h3,h4,h5,h6,p,b{
   width: 400px;
 }
 #button{
+  text-align: left;
   height: 25px;
   padding: 5px;
-  width: 720px;
+  width: 401px;
   background-color: gray;
 }
 
