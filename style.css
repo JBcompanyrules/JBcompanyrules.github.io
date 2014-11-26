@@ -20,6 +20,8 @@ color: gray;
   float: left;
   position: inline;
   opacity: 0.8;
+  color: black;
+  margin-bottom: 4px;
   background-color: lightgray;
 }
 ul{
