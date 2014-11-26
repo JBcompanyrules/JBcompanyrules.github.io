@@ -12,5 +12,5 @@ function log(msg){
 
 function FindP(){
   id = document.getElementById("Id").value
-  document.getElementById("symbol").innerHTML=id;
+  document.getElementById("symbol").innerHTML=symbols[id];
 }
