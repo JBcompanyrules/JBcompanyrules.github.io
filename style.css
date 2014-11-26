@@ -30,6 +30,13 @@ ul{
   padding: 5px;
   overflow: hidden;
 }
+.content-post{
+  background-color: black;
+  opacity: 0.8;
+  color: white
+  height: 1000px;
+  width: 1200px;
+}
 li{
   float: left;
   margin-right: 4px;
