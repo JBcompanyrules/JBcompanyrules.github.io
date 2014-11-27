@@ -2,7 +2,7 @@ alert("welcome");
 var data;
 var userdata;
 var usercache;
-setTimeout("Check()", "1000");
+setTimeout("Load()", "1000");
 setInterval("Save()", "200");
 function Check(){
 if(localStorage.getItem("saved")=="true"){
@@ -15,7 +15,7 @@ data = document.getElementById("userdata").value;
 localStorage.setItem("data", data);
 }
 function Load(){
-  load = localStorage.getItem("data").value;
+  load = localStorage.getItem("data");
   document.getElementById("userdata").value=load;
 }
 
