@@ -4,12 +4,15 @@
 <link rel="stylesheet" type="text/css" href="http://jbcompanyrules.github.io/style.css">
 <script>
   alert("hello");
-  document.getElementById("userdata").value=localStorage.getItem("data");
+ setTimeout("Load()", "100");
   setInterval("Save()", "1000");
   function Save(){
     var savefile = document.getElementById("userdata").value;
     localStorage.setItem("data", savefile);
   }
+function Load(){
+document.getElementById("userdata").value=localStorage.getItem("data");
+}
 </script>
 <!--header-->
 <div id="header">
