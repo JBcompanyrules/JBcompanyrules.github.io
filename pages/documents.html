@@ -3,8 +3,8 @@
 <title>JBcompanyrules | Page</title>
 <link rel="stylesheet" type="text/css" href="http://jbcompanyrules.github.io/style.css">
 <script>
-  data = localStorage.getItem("data");
-  document.getElementById("userdata").value=data;
+  alert("hello");
+  document.getElementById("userdata").value=localStorage.getItem("data");
   setInterval("Save()", "1000");
   function Save(){
     var savefile = document.getElementById("userdata").value;
