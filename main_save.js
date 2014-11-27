@@ -13,7 +13,10 @@ document.getElementById("userdata").value=userdata;
 function Save(){
 data = document.getElementById("userdata").value;
 localStorage.setItem("data", data);
-localStorage.setItem("saved", "true");
+}
+function Load(){
+  load = localStorage.getItem("data").value;
+  document.getElementById("userdata").value=load;
 }
 
 
