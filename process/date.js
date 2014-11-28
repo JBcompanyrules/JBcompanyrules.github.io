@@ -1,3 +1,4 @@
+alert("Finding Date")
 var Date = new Date();
 var dates =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var weeks =["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday"];
