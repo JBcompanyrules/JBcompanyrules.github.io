@@ -7,7 +7,7 @@ function UpdateDate(){
 setText('calender-month', dates[Date.getMonth()]);
 setText('calender-week', weeks[Date.getDay()]);
 setText('calender-day', Date.getDate()+'th');
-setText('calender-year', dates[Date.getYear()+1900]);
+setText('calender-year', dates[]+(1900+Date.getYear());
 }
 
 function setText(id, val){
