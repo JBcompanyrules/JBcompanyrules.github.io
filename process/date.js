@@ -6,8 +6,8 @@ setInterval("UpdateDate()", "1000")
 function UpdateDate(){
 setText("calender-month", dates[Date.getMonth()]);
 setText("calender-week", weeks[Date.getWeek()]);
-setText("calender-day", Date.getWeek());
-setText("calender-year", Date.getDate()+1900);
+setText("calender-day", Date.getDay());
+setText("calender-year", dates[Date.getYear()]+' '+(1900+Date.getYear()));
 }
 
 function setText(id, val){
