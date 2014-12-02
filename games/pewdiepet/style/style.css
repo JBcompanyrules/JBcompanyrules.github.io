@@ -1,7 +1,4 @@
-//Game
-body{
-  background-color: lightgreen;
-}
+
 #game{
 border-style: solid;
 height: 700px;
@@ -9,19 +6,22 @@ width: 1000px;
 }
 #coins{
   text-align: left;
-  font-size: 17px;
+  margin-right: 2cm;
+  font-size: 32px;
   color: yellow;
   display: inline;
 }
 #health{
   text-align: center;
-  font-size: 17px;
+  margin-right: 2cm;
+  font-size: 32px;
   color: red;
   display: inline;
 }
 #Xp{
   text-align: right;
-  font-size: 17px;
+  margin-right: 2cm;
+  font-size: 32px;
   color: lightblue;
   display: inline;
 }
