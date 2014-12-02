@@ -1,5 +1,7 @@
 //Game
-
+body{
+  background-color: lightgreen;
+}
 #game{
 border-style: solid;
 height: 700px;
