@@ -5,10 +5,8 @@ height: 400px;
 width: 600px;
 }
 #player{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 #coins{
   text-align: left;
