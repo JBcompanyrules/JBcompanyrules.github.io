@@ -17,11 +17,11 @@ width: 1000px;
   text-align: center;
   font-size: 17px;
   color: red;
-  position: inline;
+  display: inline;
 }
 #Xp{
   text-align: right;
   font-size: 17px;
   color: lightblue;
-  position: inline;
+  display: inline;
 }
