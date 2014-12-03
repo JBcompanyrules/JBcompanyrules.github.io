@@ -22,4 +22,4 @@ var player ={
 }
 
 //Start up
-player.start();
+player[start()];
