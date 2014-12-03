@@ -11,11 +11,8 @@ var player ={
   coins:"0",
   xp:"0",
   health:"50",
-  start: function(){var username =prompt("What is your pets name", "PewDiePet023");},
-  Cache:[],
   state:"baby"
-  check: Check()
 }
 
 //Start up
-player.start();
+
