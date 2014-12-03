@@ -16,3 +16,6 @@ var player ={
   state:"baby"
   check: Check()
 }
+
+//Start up
+player.start();
