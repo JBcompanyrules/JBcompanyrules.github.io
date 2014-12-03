@@ -7,12 +7,19 @@ function Check(){
     document.getElementById("playerstatus").r="30";
   }
 }
+
+var start = function(){
+  var username = prompt("Your pet's name", "The pets name");
+}
+
 var player ={
   coins:"0",
   xp:"0",
   health:"50",
-  state:"baby"
+  state:"baby",
+  playerCheck: Check(),
+  start: start()
 }
 
 //Start up
-
+player.start();
