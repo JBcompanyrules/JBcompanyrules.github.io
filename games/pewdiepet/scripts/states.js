@@ -1,5 +1,5 @@
 //Player States
-
+alert("OK here we go!");
 function Check(){
   if(player.state ==="baby"){
     document.getElementById("playerstatus").cx="40";
