@@ -10,7 +10,7 @@ function Authenticate(){
   pass = prompt("What is your password", "password");
   if(username[user]&&pass =username[user][0]){
     alert("Acess allowed");
-    document.getElementById("lock").setAttribute("style", "display: block;");
+    document.getElementById("lock").style.display ="block";
   }
   else{
     alert("Unknow user/pass");
