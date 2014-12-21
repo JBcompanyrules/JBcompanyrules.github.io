@@ -8,7 +8,7 @@ document.appendChild(loadScript);
 function Authenticate(){
   user = prompt("What is your username", "username");
   pass = prompt("What is your password", "password");
-  if(username[user]&&pass =username[user][0]){
+  if(usernames[user]&&pass =usernames[user][0]){
     alert("Acess allowed");
     document.getElementById("lock").style.display ="block";
   }
