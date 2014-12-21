@@ -1,3 +1,4 @@
+document.getElementById("lock").setAttribute("style", "display: none;");
 var user;
 var pass;
 var loadScript = document.createElement('script');
