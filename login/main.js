@@ -8,4 +8,4 @@ if(usernames[username]&&password ==usernames[username][0]){
   user = username[username];
   alert(user+" Has logged in");
 }
-
+}
