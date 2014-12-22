@@ -86,4 +86,16 @@ function CallCommand(){
     home[1] =current.playerY;
     home[2] =current.playerZ;
   }
+  if(cmd[0]=="delhome"){
+    homeset =false;
+    modPE.removeData(homeX);
+    modPE.removeData(homeY);
+    modPE.removeData(homeZ);
+    home[0] =null;
+    home[1] =null;
+    home[2] =null;
+  }
+  if(cmd[0]=="home"){
+    
+  }
 }
