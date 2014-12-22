@@ -50,7 +50,7 @@ function procCmd(command){
     try{
     CallCommand();
     }catch(error){
-      print("Error line 50: "+error)
+      print("Error line 51: "+error)
     }
   }
   else{
