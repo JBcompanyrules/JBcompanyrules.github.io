@@ -96,6 +96,17 @@ function CallCommand(){
     home[2] =null;
   }
   if(cmd[0]=="home"){
+    setPosition(player, home[0], home[1], home[2]);
+  }
+  if(cmd[0]=="heal"){
+    Player.setHealth(21);
+  }
+  if(cmd[0]=="kill"){
+    setTimeout(function(){
+      Player.setHealth(0);
+    }, 2000);
+  }
+  if(cmd[0]=="info"){
     
   }
 }
