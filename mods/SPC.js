@@ -16,6 +16,9 @@ var commands ={
   "kill": ["player.setHealth(0)"]
 };
 
+function newLevel(){
+  loaded =true;
+}
 
 function modTick(){
     if(loaded==true){
