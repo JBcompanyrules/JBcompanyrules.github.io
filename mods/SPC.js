@@ -1,6 +1,8 @@
 //Made by HASHARAHHA14
+var loaded =false;
 var static;
 var home =[];
+var current ={};
 var homeset =false;
 var commands ={
   "help":[1, 2],
@@ -13,3 +15,13 @@ var commands ={
   "home": ["home[0]", "home[1]", "home[2]"],
   "kill": ["player.setHealth(0)"]
 };
+
+
+function modTick(){
+    if(loaded==true){
+  current.X = Math.round(getPlayerX());
+  current.Y = Math.round(getPlayerY());
+  current.Z = Math.round(getPlayerZ());
+  }
+}
+
