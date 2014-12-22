@@ -2,6 +2,7 @@
 clientMessage("Please leave world and come back to load script");
 var loaded =false;
 var static;
+var version;
 var home =[];
 var current ={};
 var homeset =false;
