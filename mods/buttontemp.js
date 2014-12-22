@@ -1,25 +1,16 @@
-var buttonWindow = null;  //A window we haven't yet made
-
-function  newLevel() {  //As soon as the world loads
+var buttonWindow = null;
+function  newLevel() {
   var activity = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();
-  //A variable we'll use later to add the button to the current MCPE activity            
   activity.runOnUiThread(new java.lang.Runnable({ run: function() {
-  //This will allow our button to run on the current UI thread of MCPE  
-        try { //Try to create our button
+        try { 
           buttonWindow = new android.widget.PopupWindow();
-          //Make our variable a usable window
           var layout = new android.widget.RelativeLayout(activity);
-          //A layout to put into our window
           var button = new android.widget.Button(activity);
-          //A button to put in our layout
-          button.setText("Press Me!");
-          //Write some text upon our button
+          button.setText("Test!");
           button.setOnClickListener(new android.view.View.OnClickListener({
-                //When we press our button
                 onClick: function(viewarg) { //This lets our button run something
                 //The function() comes from activity.runOnUiThread()
-                  Level.explode(Player.getX(), Player.getY(), Player.getZ(), 3.0);
-                  clientMessage("This is our button!");
+                  print("Okay that worked");
                 }
           }));
           layout.addView(button);//Add our button to our layout
