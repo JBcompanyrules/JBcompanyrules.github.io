@@ -8,6 +8,7 @@ var version ="0.1";
 var home =[];
 var current ={};
 var homeset =false;
+//Doesn't Do anything, just for my reference and procCmd checker
 var commands ={
   "help":[1, 2],
   "give":["itemId", "Amount", "Damage"],
@@ -50,11 +51,11 @@ function procCmd(command){
     try{
     CallCommand();
     }catch(error){
-      print("Error line 51: "+error)
+      print("Error line 52: "+error)
     }
   }
   else{
-    clientMessage("<server>Unknown command: "+cmd[0]);
+    clientMessage("<server> Unknown command: "+cmd[0]);
     print("Command not found in commands: Line 60-125");
   }
 }
