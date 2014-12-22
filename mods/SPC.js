@@ -43,7 +43,7 @@ function procCmd(command){
   }
   else{
     clientMessage("<server>Unknown command: "+cmd[0]);
-    print("Command not found in commands: 45")
+    print("Command not found in commands: Line 50-")
   }
 }
 
@@ -51,6 +51,9 @@ function CallCommand(){
   if(cmd[0]=="help"||cmd[0]=="help"&&cmd[1]=="1"){
     clientMessage("Help list 1 of "+ current.helplist);
     clientMessage("/give <ItemId> <Amount> <Damage|Default 0>");
+    clientMessage("/gamemode <0|1>");
+    clientMessage("/settime <TimeId>");
+    clientMessage("/explode <Radius>");
     clientMessage("/")
   }
 }
