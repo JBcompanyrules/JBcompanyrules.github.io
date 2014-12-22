@@ -23,6 +23,7 @@ if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
   home[1] = modPE.readData(homeY);
   home[2] = modPE.readData(homeZ);
   static =false;
+  homeset =true;
 }
 
 function newLevel(){
@@ -31,9 +32,9 @@ function newLevel(){
 
 function modTick(){
     if(loaded){
-  current.X = Math.round(getPlayerX());
-  current.Y = Math.round(getPlayerY());
-  current.Z = Math.round(getPlayerZ());
+  current.playerX = Math.round(getPlayerX());
+  current.playerY = Math.round(getPlayerY());
+  current.playerZ = Math.round(getPlayerZ());
   }
 }
 
@@ -69,5 +70,20 @@ function CallCommand(){
   }
   if(cmd[0]=="gamemode"){
     Level.setGameMode(parseInt(cmd[1]));
+  }
+  if(cmd[0]=="settime"){
+    Level.setTime(parseInt(cmd[1]));
+  }
+  if(cmd[0]=="explode"){
+    Level.explode(current.playerX, current.playerY, current.playerZ, parseInt(cmd[1]));
+  }
+  if(cmd[0]=="sethome"&&homeset ==false){
+    modPE.saveData(homeX, current.playerX);
+    modPE.saveData(homeY, current.playerY+2);
+    modPE.saveData(homeZ, current.playerZ);
+    homeset =true
+    home[0] =current.playerX;
+    home[1] =current.playerY;
+    home[2] =current.playerZ;
   }
 }
