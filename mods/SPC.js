@@ -64,4 +64,10 @@ function CallCommand(){
     clientMessage("/kill [Kills the player]");
     clientMessage("/info [Pulls up info on mod creater]");
   }
+  if(cmd[0]=="give"){
+    addItemInventory(parseInt(cmd[1]), parseInt(cmd[2]), parseInt(cmd[3]));
+  }
+  if(cmd[0]=="gamemode"){
+    Level.setGameMode(parseInt(cmd[1]));
+  }
 }
