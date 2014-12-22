@@ -1,6 +1,6 @@
 //Made by HASHARAHHA14
 clientMessage("Please leave world and come back to load script");
-print("Mod is unloaded");
+print("Mod is not loaded");
 var loaded =false;
 var rnd;
 var static;
