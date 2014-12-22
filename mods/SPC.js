@@ -1,8 +1,10 @@
 //Made by HASHARAHHA14
 clientMessage("Please leave world and come back to load script");
+print("Mod is unloaded");
 var loaded =false;
+var rnd;
 var static;
-var version;
+var version ="0.1";
 var home =[];
 var current ={};
 var homeset =false;
@@ -29,6 +31,7 @@ if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
 
 function newLevel(){
   loaded =true;
+  print("Mod is loaded")
 }
 
 function modTick(){
@@ -37,17 +40,22 @@ function modTick(){
   current.playerY = Math.round(getPlayerY());
   current.playerZ = Math.round(getPlayerZ());
   }
+  rnd =Math.floor(Math.random()*10);
 }
 
 function procCmd(command){
   static = command;
   var cmd = command.split();
   if(commands[cmd[0]]){
+    try{
     CallCommand();
+    }catch(error){
+      print("Error line 50: "+error)
+    }
   }
   else{
     clientMessage("<server>Unknown command: "+cmd[0]);
-    print("Command not found in commands: Line 50-")
+    print("Command not found in commands: Line 60-125");
   }
 }
 
@@ -108,6 +116,9 @@ function CallCommand(){
     }, 2000);
   }
   if(cmd[0]=="info"){
-    
+    clientMessage("Created By:");
+    clientMessage("HASHARAHHA14, For more mods go to:");
+    clientMessage("http://jbcompanyrules.blogspot.com");
+    clientMessage("Version: "+version);
   }
 }
