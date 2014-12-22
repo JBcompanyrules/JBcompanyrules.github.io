@@ -1,4 +1,5 @@
 //Made by HASHARAHHA14
+clientMessage("Please leave world and come back to load script");
 var loaded =false;
 var static;
 var home =[];
@@ -54,6 +55,9 @@ function CallCommand(){
     clientMessage("/gamemode <0|1>");
     clientMessage("/settime <TimeId>");
     clientMessage("/explode <Radius>");
-    clientMessage("/")
+    clientMessage("/sethome [Sets your Home]");
+    clientMessage("/delhome [deletes your home]");
+    clientMessage("/home [Teleports you Home]");
+    clientMessage("")
   }
 }
