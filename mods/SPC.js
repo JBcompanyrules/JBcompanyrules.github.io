@@ -18,7 +18,7 @@ var commands ={
   "delhome": [0, 0, 0, false],
   "home": ["home[0]", "home[1]", "home[2]"],
   "kill": ["player.setHealth(0)"],
-  "heal": ["Player.setHealth(20)"],
+  "heal": ["Player.setHealth(20)"]
 };
 current.helplist ="1";
 if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
