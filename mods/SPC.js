@@ -14,7 +14,8 @@ var commands ={
   "sethome": [playerX, playerY, playerZ, true],
   "delhome": [0, 0, 0, false],
   "home": ["home[0]", "home[1]", "home[2]"],
-  "kill": ["player.setHealth(0)"]
+  "kill": ["player.setHealth(0)"],
+  "heal": ["Player.setHealth(20)"],
 };
 current.helplist ="1";
 if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
@@ -50,6 +51,7 @@ function procCmd(command){
 
 function CallCommand(){
   if(cmd[0]=="help"||cmd[0]=="help"&&cmd[1]=="1"){
+    clientMessage("*                                        *")
     clientMessage("Help list 1 of "+ current.helplist);
     clientMessage("/give <ItemId> <Amount> <Damage|Default 0>");
     clientMessage("/gamemode <0|1>");
@@ -58,6 +60,8 @@ function CallCommand(){
     clientMessage("/sethome [Sets your Home]");
     clientMessage("/delhome [deletes your home]");
     clientMessage("/home [Teleports you Home]");
-    clientMessage("")
+    clientMessage("/heal [heals the player]");
+    clientMessage("/kill [Kills the player]");
+    clientMessage("/info [Pulls up info on mod creater]");
   }
 }
