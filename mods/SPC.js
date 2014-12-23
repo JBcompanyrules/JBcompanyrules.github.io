@@ -3,6 +3,10 @@ clientMessage("Please leave world and come back to load script");
 print("Mod is not loaded");
 var loaded =false;
 var rnd;
+var magicwand ={
+  setpos1: function(){  clientMessage("Pos1 set"); },
+  static: null
+};
 var static;
 var version ="0.1";
 var home =[];
@@ -33,7 +37,17 @@ if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
 function newLevel(){
   loaded =true;
   print("Mod is loaded");
-  modPE.setItem(500, arrow, 0, "Wand");
+  modPE.setItem(500, "hoe", 0, "Wand");
+}
+
+function useItem(x, y, z, itemId, blockId){
+  if(itemId ==500){
+    magicwand.setpos1();
+    settile(x, y, z, 0, 0);
+    var StaticX = x;
+    var StaticY = y;
+    var StaticZ = z;
+  }
 }
 
 function modTick(){
