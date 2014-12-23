@@ -32,7 +32,8 @@ if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
 
 function newLevel(){
   loaded =true;
-  print("Mod is loaded")
+  print("Mod is loaded");
+  modPE.setItem(500, arrow, 0, "Wand");
 }
 
 function modTick(){
