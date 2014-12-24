@@ -17,16 +17,16 @@ var current ={};
 var homeset =false;
 //Doesn't Do anything, just for my reference and procCmd checker
 var commands ={
-  "help":[1, 2],
-  "give":["itemId", "Amount", "Damage"],
-  "gamemode": [0, 1],
-  "settime": ["Time#"],
-  "explode": ["radius"],
-  "sethome": [playerX, playerY, playerZ, true],
-  "delhome": [0, 0, 0, false],
-  "home": ["home[0]", "home[1]", "home[2]"],
-  "kill": ["player.setHealth(0)"],
-  "heal": ["Player.setHealth(20)"]
+  "help": "Command",
+  "give":"Command",
+  "gamemode": "Command",
+  "settime": "Command",
+  "explode": "Command",
+  "sethome": "Command",
+  "delhome": "Command",
+  "home": "Command",
+  "kill": "Command",
+  "heal": "Command"
 };
 current.helplist ="1";
 if(modPE.readData(homeX)&&modPE.readData(homeY)&&modPE.readData(homeZ)){
@@ -71,7 +71,7 @@ function procCmd(command){
     try{
     CallCommand();
     }catch(error){
-      print("Error line 52: "+error)
+      print("Error line 83-200: "+error)
     }
   }
   else{
@@ -88,7 +88,7 @@ function CallCommand(){
     clientMessage("/gamemode <0|1>");
     clientMessage("/settime <TimeId>");
     clientMessage("/explode <Radius>");
-    clientMessage("/sethome [Sets your Home]");
+    clientMessage("/sethome <name> [Sets your Home]");
     clientMessage("/delhome [deletes your home]");
     clientMessage("/home [Teleports you Home]");
     clientMessage("/heal [heals the player]");
@@ -99,11 +99,11 @@ function CallCommand(){
     Msg(cmd[2]+" Of "+cmd[1]+" Was given")
     addItemInventory(parseInt(cmd[1]), parseInt(cmd[2]), parseInt(cmd[3]));
   }
-  if(cmd[0]=="gamemode"){
+  if(cmd[0]=="gamemode"&&cmd[1] != undefined){
     Msg("Gamemode was set to "+cmd[1]);
     Level.setGameMode(parseInt(cmd[1]));
   }
-  if(cmd[0]=="settime"){
+  if(cmd[0]=="settime"&&cmd[1] != undefined){
     Msg("Time was set to "+cmd[1]);
     Level.setTime(parseInt(cmd[1]));
   }
