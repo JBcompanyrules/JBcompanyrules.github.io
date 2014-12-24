@@ -1,5 +1,6 @@
 //Made by HASHARAHHA14
-clientMessage("Please leave world and come back to load script");
+Msg("Mod Made by HASHARAHHA14")
+clientMessage("<HASHARAHHA14> Please leave world and come back to load script.");
 print("Mod is not loaded");
 var loaded =false;
 var rnd;
